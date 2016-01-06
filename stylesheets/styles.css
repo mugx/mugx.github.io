@@ -1,0 +1,198 @@
+/******************************** Main components stuff ********************************/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+BODY {
+    font-family:  -apple-system, Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 16px;
+	line-height: 1.5;
+    height: 100%;
+    color: #000000;
+    margin: 0;
+    padding-top: 25px;
+    background-color: rgba(250, 250, 250, 1.0);
+    color:rgba(55, 55, 55, 1.0);
+}
+
+@media screen and (max-width: 480px) {
+    BODY {
+       padding-top: 65px; 
+       font-size: 12px;
+    }
+}
+section {
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 35em;
+    width: auto;
+}
+
+/******************************** Navigation Stuff ********************************/
+header {
+    position: fixed;
+    background-color: rgba(250, 250, 250, 0.9);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-bottom: 0.5px solid rgba(55,55,55,0.5);
+
+}
+
+#header-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgba(55,55,55,1);
+    display: block;
+    border-bottom: 0;
+    text-decoration: none;
+}
+
+#main-nav UL {
+    text-transform: uppercase;
+    font-size: 80%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav LI {
+    display: inline;
+    padding: 0 1em;
+}
+
+#main-nav .active {
+    font-weight: bold;
+    border-bottom: 0;
+}
+
+#page-container {
+    margin: auto;
+    padding: 0 1em;
+}
+
+/******************************** Footer Stuff ********************************/
+#site-footer {
+    text-align: center;
+    font-size: .75em;
+    padding-bottom: 1em;
+}
+
+/******************************** H Stuff ********************************/
+
+hr {
+  border: 0.5px solid #cccccc;
+  margin-bottom:30px;
+}
+
+H1,
+H2,
+H3,
+H4,
+H5,
+H6 {
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    cursor: text;
+}
+
+H1 {
+    font-size: 28px;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: left;
+    line-height: 1.2;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+}
+
+H3 {
+	margin-top: 2em;
+	font-size: 22px; 
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 20px; 
+	font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+    h3,h4 {
+		font-size: 14px; 
+    }
+}
+
+.paragraph{
+	display:block;
+	margin-top:10px;
+}
+
+.item-block{
+	display:block;
+	margin-top:5px;
+}
+
+.image-block{
+	margin-top:10px;
+	margin-left:5px;
+	object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+/******************************** Anchor Stuff ********************************/
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+a {
+  background-color: transparent;
+  color: #4183C4;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color .75s;
+    -webkit-transition: border-bottom-color 1s;
+}
+
+a.anchor {
+  padding-top: 100px; 
+  margin-top: -100px;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  bottom: 0; 
+  display: block;
+  visibility: hidden;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+  border-bottom-color: #4183C4;
+  color: #4183C4;
+}
+
+a:active {
+  color: red;
+}
+
+a[name] {
+    display: block;
+    padding-top: 90px;
+    margin-top: -90px;
+}
