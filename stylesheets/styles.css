@@ -5,7 +5,7 @@ html {
 }
 
 BODY {
-    font-family:  -apple-system, Avenir, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     font-size: 16px;
@@ -137,7 +137,7 @@ h4 {
 
 .paragraph{
 	display:block;
-	margin-top:10px;
+	margin-top:20px;
 }
 
 .item-block{
